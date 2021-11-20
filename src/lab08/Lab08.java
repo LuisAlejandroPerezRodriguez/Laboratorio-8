@@ -1,21 +1,26 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    Estudiante: Luis Alejandro Perez Rodriguez
+    Matricula: 10141930
  */
 package lab08;
 
-/**
- *
- * @author luisa
- */
 public class Lab08 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        
+        //problema 1
+        try {
+            int[] test={99,-88,102,77};
+            TestScores TS1=new TestScores(test);
+            
+        }catch(ExcepcionNegativa Error1){
+            System.out.println(Error1.getMessage());
+        }catch(ExcepcionMasDeCien Error2){
+            System.out.println(Error2.getMessage());
+        }
+            
+        
     
+    }
+
 }
