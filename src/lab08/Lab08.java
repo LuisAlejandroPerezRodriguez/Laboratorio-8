@@ -26,8 +26,9 @@ public class Lab08 {
            case 1:
         //problema 1
         try {
-            int[] test={99,-88,102,77}; // ← OJO aqui tiene que poner un numero negativo o mayor de 100 para probar las excepciones
+            int[] test={99,88,10,77}; // ← OJO aqui tiene que poner un numero negativo o mayor de 100 para probar las excepciones
             TestScores TS1=new TestScores(test);
+            System.out.println(TS1.Promedio());
             
         }catch(ExcepcionNegativa Error1){
             System.out.println(Error1.getMessage());
@@ -35,6 +36,17 @@ public class Lab08 {
             System.out.println(Error2.getMessage());
         }
          break;
+        
+           case 2:
+            //Problema 2   
+            try {
+            int[] test2={89,-88,102,77}; // ← OJO aqui tiene que poner un numero negativo o mayor de 100 para probar las excepciones
+            TestScoresEjercicio2 modify2=new TestScoresEjercicio2(test2);
+            System.out.println(modify2.Promedio());
+            }catch(InvalidTestScore Error3){
+                System.out.println(Error3.getMessage());        
+            }
+               break;
          
        }
         }
