@@ -18,7 +18,7 @@ public class Lab08 {
                 + "\n Introduzca #2. para ver proramming Challenges 2"+ "\n Introduzca #3. para ver proramming Challenges 9" 
                 +"\n Introduzca #0. para salir del programa");
         respuesta=key1.nextInt();
-       } while( respuesta!=0 && respuesta>4);
+       } while( respuesta!=0 && respuesta>3);
        
         if(respuesta!=0 ){
        switch (respuesta){
@@ -47,7 +47,15 @@ public class Lab08 {
                 System.out.println(Error3.getMessage());        
             }
                break;
-         
+               
+           case 3:
+               //problema 9
+               SerializeScores s1= new SerializeScores();
+               s1.Mostrar();
+               
+               DeserializeScores d1=new DeserializeScores();
+               d1.Mostrar();
+               break; 
        }
         }
         System.out.println("Desea continuar? (Escribir y para continuar o n para salir del programa)");
